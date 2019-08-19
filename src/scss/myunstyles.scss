@@ -1,0 +1,52 @@
+$font-size-base: 1rem;
+$grey-5-percent: lighten(#000, 95%);
+$font-family-sans-serif: 'Roboto',
+'Helvetica Neue',
+'Helvetica',
+'Arial',
+'sans-serif';
+$font-normal: 400;
+$letterspacing-less-wide: 0.03em;
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
+
+#brand-bar {
+    background: $grey-5-percent; //$grey-70-percent $blue
+    margin: 0;
+    padding: 0;
+    border: none !important;
+    border-bottom: $blue solid 5px !important;
+    height: 41px;
+    min-height: inherit;
+
+    .navbar-header {
+        padding: ($font-size-base * 0.7) 0 ($font-size-base * 0.3) 0px;
+        width: 100%;
+        padding-right: ($font-size-base * 0.8);
+    }
+}
+
+.brandbar-header {
+    .fa-home {
+        font-size: ($font-size-base*1.07); // 14
+        margin-left: 2px;
+    }
+
+    padding-top: 10px;
+    font-family: $font-family-sans-serif;
+
+    a {
+        padding: 0;
+        font-size: ($font-size-base * 0.95); // ~12px
+        line-height: ($font-size-base * 1.31); // ~17px
+        font-weight: $font-normal; // 400
+        letter-spacing: $letterspacing-less-wide;
+        color: black;
+
+        @media (max-width: $screen-sm-min) {
+            // Mobile styles
+            font-size: ($font-size-base * 0.93); // ~12px
+            letter-spacing: -0.02em;
+        }
+    }
+}

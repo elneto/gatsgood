@@ -7,10 +7,10 @@
 // Color system
 //
 @import './colors.scss';
+@import './myunstyles.scss';
 
 // Reassign color vars to semantic color scheme
-$theme-colors: (
-  primary: $purple,
+$theme-colors: (primary: $purple,
   secondary: $gray-600,
   success: $green,
   info: $cyan,
@@ -35,11 +35,10 @@ $enable-print-styles: true !default;
 //
 // Define the maximum width of `.container` for different screen sizes.
 
-$container-max-widths: (
-  sm: 540px,
-  md: 640px,
-  lg: 710px,
-  xl: 780px,
+$container-max-widths: (sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
 ) !default;
 
 // Body

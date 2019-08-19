@@ -10,6 +10,7 @@ import 'prismjs/themes/prism.css'
 import 'scss/gatstrap.scss'
 import 'animate.css/animate.css'
 import 'font-awesome/css/font-awesome.css'
+import Brandbar from 'components/brandbar/index';
 
 class Layout extends React.Component {
   componentDidMount() {
@@ -24,6 +25,7 @@ class Layout extends React.Component {
     const { children } = this.props
     return (
       <div>
+        <Brandbar />
         <Navi title={siteMetadata.title} {...this.props} />
         {children}
         <Footer title={siteMetadata.title} author={siteMetadata.author} />
